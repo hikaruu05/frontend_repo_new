@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductCard from '../components/ProductCard'; // Corrected path
+import ProductCard from '../components/ProductCard'; 
 
 const Home = ({ products = [], addToCart }) => {
   return (
