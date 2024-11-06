@@ -1,3 +1,6 @@
+import ProductCard from './components/ProductCard';
+
+
 const Home = ({ products = [], addToCart }) => {
   return (
     <div>
