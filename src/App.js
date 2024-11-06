@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 import Checkout from './pages/Checkout';
-import Cart from './components/Cart'; // Assuming you have a Cart component
 
 function App() {
   const [products, setProducts] = useState([]);

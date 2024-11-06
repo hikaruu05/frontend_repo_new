@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CheckoutForm from '../components/CheckoutForm';
 
 const Checkout = ({ cartItems, placeOrder }) => {
-  const [orderData, setOrderData] = useState(null);
 
   const handleSubmit = (formData) => {
     const orderDetails = {
