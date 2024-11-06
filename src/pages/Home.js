@@ -1,5 +1,5 @@
-import ProductCard from './components/ProductCard';
-
+import React from 'react';
+import ProductCard from '../components/ProductCard'; // Corrected path
 
 const Home = ({ products = [], addToCart }) => {
   return (
@@ -13,4 +13,5 @@ const Home = ({ products = [], addToCart }) => {
     </div>
   );
 };
+
 export default Home;
