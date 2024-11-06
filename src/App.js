@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import ProductList from './pages/ProductList';
-import ProductDetail from './pages/ProductDetail';
-import Checkout from './pages/Checkout';
+import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js'
+import Home from './pages/Home.js';
+import ProductList from './pages/ProductList.js';
+import ProductDetail from './pages/ProductDetail.js';
+import Checkout from './pages/Checkout.js';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/checkout" element={<Checkout cart={cart} />} />
         {/* Add more routes as needed */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
