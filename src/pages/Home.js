@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
-import ProductCard from '../components/ProductCard';
-
-const Home = ({ products, addToCart }) => {
+const Home = ({ products = [], addToCart }) => {
   return (
     <div>
       <h1>Welcome to Our Store</h1>
@@ -13,5 +10,4 @@ const Home = ({ products, addToCart }) => {
     </div>
   );
 };
-
 export default Home;
